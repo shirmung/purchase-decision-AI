@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C165055E152CC2C600D9D723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165055D152CC2C600D9D723 /* Foundation.framework */; };
+		C1650561152CC2C600D9D723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1650560152CC2C600D9D723 /* main.m */; };
+		C1650565152CC2C600D9D723 /* AI_PurchaseDecision.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */; };
+		C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */ = {isa = PBXBuildFile; fileRef = C165056C152CC30500D9D723 /* PurchaseDecision.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1650557152CC2C600D9D723 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C1650565152CC2C600D9D723 /* AI_PurchaseDecision.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C1650559152CC2C600D9D723 /* AI_PurchaseDecision */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AI_PurchaseDecision; sourceTree = BUILT_PRODUCTS_DIR; };
+		C165055D152CC2C600D9D723 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1650560152CC2C600D9D723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1650563152CC2C600D9D723 /* AI_PurchaseDecision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AI_PurchaseDecision-Prefix.pch"; sourceTree = "<group>"; };
+		C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AI_PurchaseDecision.1; sourceTree = "<group>"; };
+		C165056B152CC30500D9D723 /* PurchaseDecision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseDecision.h; sourceTree = "<group>"; };
+		C165056C152CC30500D9D723 /* PurchaseDecision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseDecision.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1650556152CC2C600D9D723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165055E152CC2C600D9D723 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C165054E152CC2C600D9D723 = {
+			isa = PBXGroup;
+			children = (
+				C165055F152CC2C600D9D723 /* AI_PurchaseDecision */,
+				C165055C152CC2C600D9D723 /* Frameworks */,
+				C165055A152CC2C600D9D723 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C165055A152CC2C600D9D723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1650559152CC2C600D9D723 /* AI_PurchaseDecision */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C165055C152CC2C600D9D723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C165055D152CC2C600D9D723 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C165055F152CC2C600D9D723 /* AI_PurchaseDecision */ = {
+			isa = PBXGroup;
+			children = (
+				C1650560152CC2C600D9D723 /* main.m */,
+				C165056B152CC30500D9D723 /* PurchaseDecision.h */,
+				C165056C152CC30500D9D723 /* PurchaseDecision.m */,
+				C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */,
+				C1650562152CC2C600D9D723 /* Supporting Files */,
+			);
+			path = AI_PurchaseDecision;
+			sourceTree = "<group>";
+		};
+		C1650562152CC2C600D9D723 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1650563152CC2C600D9D723 /* AI_PurchaseDecision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1650558152CC2C600D9D723 /* AI_PurchaseDecision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "AI_PurchaseDecision" */;
+			buildPhases = (
+				C1650555152CC2C600D9D723 /* Sources */,
+				C1650556152CC2C600D9D723 /* Frameworks */,
+				C1650557152CC2C600D9D723 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AI_PurchaseDecision;
+			productName = AI_PurchaseDecision;
+			productReference = C1650559152CC2C600D9D723 /* AI_PurchaseDecision */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1650550152CC2C600D9D723 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "AI_PurchaseDecision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C165054E152CC2C600D9D723;
+			productRefGroup = C165055A152CC2C600D9D723 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1650558152CC2C600D9D723 /* AI_PurchaseDecision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1650555152CC2C600D9D723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1650561152CC2C600D9D723 /* main.m in Sources */,
+				C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1650566152CC2C600D9D723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C1650567152CC2C600D9D723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C1650569152CC2C600D9D723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AI_PurchaseDecision/AI_PurchaseDecision-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C165056A152CC2C600D9D723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AI_PurchaseDecision/AI_PurchaseDecision-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "AI_PurchaseDecision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1650566152CC2C600D9D723 /* Debug */,
+				C1650567152CC2C600D9D723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "AI_PurchaseDecision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1650569152CC2C600D9D723 /* Debug */,
+				C165056A152CC2C600D9D723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1650550152CC2C600D9D723 /* Project object */;
+}
