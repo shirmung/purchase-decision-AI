@@ -11,6 +11,8 @@
 		C1650561152CC2C600D9D723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1650560152CC2C600D9D723 /* main.m */; };
 		C1650565152CC2C600D9D723 /* AI_PurchaseDecision.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */; };
 		C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */ = {isa = PBXBuildFile; fileRef = C165056C152CC30500D9D723 /* PurchaseDecision.m */; };
+		C1FF5B46153604E000EC9005 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF5B45153604E000EC9005 /* Agent.m */; };
+		C1FF5B4A1536055100EC9005 /* Jeans.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF5B491536055100EC9005 /* Jeans.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AI_PurchaseDecision.1; sourceTree = "<group>"; };
 		C165056B152CC30500D9D723 /* PurchaseDecision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseDecision.h; sourceTree = "<group>"; };
 		C165056C152CC30500D9D723 /* PurchaseDecision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseDecision.m; sourceTree = "<group>"; };
+		C1FF5B44153604E000EC9005 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		C1FF5B45153604E000EC9005 /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		C1FF5B481536055100EC9005 /* Jeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jeans.h; sourceTree = "<group>"; };
+		C1FF5B491536055100EC9005 /* Jeans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jeans.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 				C1650560152CC2C600D9D723 /* main.m */,
 				C165056B152CC30500D9D723 /* PurchaseDecision.h */,
 				C165056C152CC30500D9D723 /* PurchaseDecision.m */,
+				C1FF5B44153604E000EC9005 /* Agent.h */,
+				C1FF5B45153604E000EC9005 /* Agent.m */,
+				C1FF5B481536055100EC9005 /* Jeans.h */,
+				C1FF5B491536055100EC9005 /* Jeans.m */,
 				C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */,
 				C1650562152CC2C600D9D723 /* Supporting Files */,
 			);
@@ -145,6 +155,8 @@
 			files = (
 				C1650561152CC2C600D9D723 /* main.m in Sources */,
 				C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */,
+				C1FF5B46153604E000EC9005 /* Agent.m in Sources */,
+				C1FF5B4A1536055100EC9005 /* Jeans.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +245,7 @@
 				C165056A152CC2C600D9D723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

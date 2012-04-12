@@ -6,11 +6,13 @@
 //  Copyright (c) 2012. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface PurchaseDecision : NSObject
 {
     
 }
+
+- (void)partB;
+- (float)partC;
+- (float)partD;
 
 @end
