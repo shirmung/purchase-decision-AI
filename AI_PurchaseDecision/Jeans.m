@@ -10,4 +10,34 @@
 
 @implementation Jeans
 
+@synthesize price;
+
+- (id)init
+{
+    self = [super init];
+    
+    if (self) {
+        
+    }
+    
+    return self;
+}
+
+- (id)initWithPrice:(float)aPrice
+{
+    self = [super init];
+    
+    if (self) {
+        self.price = aPrice;
+    }
+    
+    return self;
+}
+
+- (void)dealloc
+{
+    [super dealloc];
+}
+
+
 @end

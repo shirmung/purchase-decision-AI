@@ -8,7 +8,11 @@
 
 @interface Jeans : NSObject
 {
-    
+    float price;
 }
+
+@property (nonatomic, assign) float price;
+
+- (id)initWithPrice:(float)aPrice;
 
 @end

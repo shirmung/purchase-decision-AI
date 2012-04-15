@@ -7,21 +7,36 @@
 //
 
 #import "PurchaseDecision.h"
+#import "Agent.h"
+#import "Jeans.h"
 
 #define M_E 2.71828182845904523536028747135266250
 
 @implementation PurchaseDecision
+
+@synthesize threshold;
 
 - (id)init
 {
     self = [super init];
     
     if (self) {
-        //create new agent with specified values
-        //create new pair of jeans with specified values
-        //call methods on agent and pair of jeans
+        threshold = 0.5;
         
-        [self partB];
+        Agent *agent1 = [[Agent alloc] initWithBudget:30.0 Fit:0.6 Trust:0.6 Fashion:1.0 
+                                                RhoLC:0.2 RhoUC:1.1 LambdaLC:1.5 LambdaUC:2.0
+                                                PhiLC:1.0 PhiUC:1.2 TauLC:1.0 TauUC:1.5 GammaLC:0.1 GammaUC:1.1];
+        Jeans *jeans1 = [[Jeans alloc] initWithPrice:10.0];
+        
+        for (int time = 1; time <= 10; time++) {
+            float purchase = [self partA:agent1 :jeans1];
+            
+            if (purchase >= threshold) {
+                NSLog(@"REACHES THRESHOLD WITH %f AT TIME %i", purchase, time);
+            } else {
+                NSLog(@"DOES NOT REACH THRESHOLD WITH %f AT TIME %i", purchase, time);
+            }
+        }
     }
     
     return self;
@@ -34,68 +49,55 @@
 
 #pragma mark
 
-- (void)partB
+- (float)partA:(Agent *)agent :(Jeans *)jeans
 {
-    float rhoLC = 0.2;
-    float rhoUC = 1.1;
-    
-    float price = 10.0;
-    float budget = 30.0;
-    
-    float lambdaLC = 1.5;
-    float lambdaUC = 2.0;
-    
-    for (int time = 1; time <= 10; time++) {
-        float like = [self partC];
-    
-        float mB = ((rhoLC * pow((price / (budget - price)), rhoUC)) + (lambdaLC * pow(fabsf(1.0 - (0.25 * like)), lambdaUC)) - 2);
-    
-        float purchase = 1.0/(1.0 + pow(M_E, mB));
+    // represents how much an agent likes a pair of jeans
+    // ∈ {0, 1, 2, 3, 4)
+    int like = [self partB:agent];
+    float mLike = agent.lambdaLC * pow(fabsf(1.0 - (0.25 * like)), agent.lambdaUC);
         
-        NSLog(@"%f at time %i", purchase, time);
-    }
+    // represents an agent's ability to purchase a pair of jeans
+    float mPrice = agent.rhoLC * pow((jeans.price / (agent.budget - jeans.price)), agent.rhoUC);
+        
+    float m = (mPrice + mLike - 2);
+    
+    // purchase probability
+    float purchase = 1.0/(1.0 + pow(M_E, m));
+    
+    return purchase;
 }
 
-- (float)partC 
+- (int)partB:(Agent *)agent
 {
-    float phiLC = 1.0;
-    float phiUC = 1.2;
-    
-    float fit = 0.6;//1.0;
-    
-    float tauLC = 1.0;
-    float tauUC = 1.5;
-    
-    float trust = 0.6;//1.0;
-    
-    float gammaLC = 1.0;
-    float gammaUC = 1.1;
-    
-    float fashion = [self partD];
-    
-    float zLike;
-    float mC;
-    float like;
+    float m = MAX_INPUT;
+    int like;
                                                         
     for (int sLike = 0; sLike <= 4; sLike++) {
-        zLike = pow(M_E, (-1 * 0.25 * sLike));
+        // represents how well an agent feels a pair of jeans fits
+        float mFit = agent.phiLC * pow((fabsf((0.25 * sLike) - agent.fit)), agent.phiUC);
         
-        mC = (phiLC * pow(fabsf((0.25 * sLike) - fit), phiUC)) + (tauLC * pow(fabsf((0.25 * sLike) - trust), tauUC)) + (gammaLC * pow(0.25, gammaUC) * pow(fabsf(sLike - fashion), gammaUC));
+        // represents how much an agent trusts the brand of a pair of jeans
+        float mTrust = agent.tauLC * pow(fabsf((0.25 * sLike) - agent.trust), agent.tauUC);
         
-        like = like + (0.25 * sLike * (1 / zLike) * pow(M_E, (-1 * mC)));
-    }                                                   
+        // represents an agent's sense of fashion
+        float mFashion = agent.gammaLC * pow(0.25, agent.gammaUC) * pow(fabsf(sLike - agent.fashion), agent.gammaUC);
+        
+        float mTemp = mFit + mTrust + mFashion;
     
-    NSLog(@"%f", like);
-    
+        if (mTemp < m) {
+            m = mTemp;
+            like = sLike;
+        } 
+    }
+
     return like;
 }
 
-- (float)partD 
+// TDL: advertising and social influence on an agent's sense of fashion over time
+- (float)partC 
 {    
-    float fashion = 0.0;
-    
-    NSLog(@"%f", fashion);
-    
+    float fashion = 1.0;
+
     return fashion;
 }
 

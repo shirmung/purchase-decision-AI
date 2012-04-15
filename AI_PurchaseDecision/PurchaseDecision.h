@@ -6,13 +6,18 @@
 //  Copyright (c) 2012. All rights reserved.
 //
 
+@class Agent;
+@class Jeans;
+
 @interface PurchaseDecision : NSObject
 {
-    
+    float threshold;
 }
 
-- (void)partB;
+@property (nonatomic, assign) float threshold;
+
+- (float)partA:(Agent *)agent :(Jeans *)jeans;
+- (int)partB:(Agent *)agent;
 - (float)partC;
-- (float)partD;
 
 @end
