@@ -13,6 +13,7 @@
 @synthesize budget, fit, trust, fashion;
 @synthesize rhoLC, rhoUC, lambdaLC, lambdaUC;
 @synthesize phiLC, phiUC, tauLC, tauUC, gammaLC, gammaUC;
+@synthesize delta, alphaLC, alphaUC;
 
 - (id)init
 {
@@ -25,29 +26,34 @@
     return self;
 }
 
-- (id)initWithBudget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(float)aFashion 
+- (id)initWithBudget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(int)aFashion 
                RhoLC:(float)aRhoLC RhoUC:(float)aRhoUC LambdaLC:(float)aLambdaLC LambdaUC:(float)aLambdaUC 
                PhiLC:(float)aPhiLC PhiUC:(float)aPhiUC TauLC:(float)aTauLC TauUC:(float)aTauUC GammaLC:(float)aGammaLC GammaUC:(float)aGammaUC
+               Delta:(float)aDelta AlphaLC:(NSArray *)aAlphaLC AlphaUC:(NSArray *)aAlphaUC
 {
     self = [super init];
     
     if (self) {
-        self.budget = aBudget;
-        self.fit = aFit;
-        self.trust = aTrust;
-        self.fashion = aFashion;
+        budget = aBudget;
+        fit = aFit;
+        trust = aTrust;
+        fashion = aFashion;
         
-        self.rhoLC = aRhoLC;
-        self.rhoUC = aRhoUC;
-        self.lambdaLC = aLambdaLC;
-        self.lambdaUC = aLambdaUC;
+        rhoLC = aRhoLC;
+        rhoUC = aRhoUC;
+        lambdaLC = aLambdaLC;
+        lambdaUC = aLambdaUC;
         
-        self.phiLC = aPhiLC;
-        self.phiUC = aPhiUC;
-        self.tauLC = aTauLC;
-        self.tauUC = aTauUC;
-        self.gammaLC = aGammaLC;
-        self.gammaUC = aGammaUC;
+        phiLC = aPhiLC;
+        phiUC = aPhiUC;
+        tauLC = aTauLC;
+        tauUC = aTauUC;
+        gammaLC = aGammaLC;
+        gammaUC = aGammaUC;
+        
+        delta = aDelta;
+        alphaLC = [[NSArray alloc] initWithArray:aAlphaLC];
+        alphaUC = [[NSArray alloc] initWithArray:aAlphaUC];
     }
     
     return self;
@@ -55,6 +61,9 @@
 
 - (void)dealloc
 {
+    [alphaLC release];
+    [alphaUC release];
+    
     [super dealloc];
 }
 

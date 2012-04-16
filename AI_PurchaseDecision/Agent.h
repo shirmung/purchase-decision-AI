@@ -11,7 +11,7 @@
     float budget;
     float fit;
     float trust;
-    float fashion;
+    int fashion;
     
     // combination weights for simulating purchase probability in part A
     float rhoLC;
@@ -26,12 +26,17 @@
     float tauUC;
     float gammaLC;
     float gammaUC;
+    
+    // combination weight for choosing a fashion value in part C
+    float delta;
+    NSArray *alphaLC;
+    NSArray *alphaUC;
 }
 
 @property (nonatomic, assign) float budget;
 @property (nonatomic, assign) float fit;
 @property (nonatomic, assign) float trust;
-@property (nonatomic, assign) float fashion;
+@property (nonatomic, assign) int fashion;
 
 @property (nonatomic, assign) float rhoLC;
 @property (nonatomic, assign) float rhoUC;
@@ -45,8 +50,13 @@
 @property (nonatomic, assign) float gammaLC;
 @property (nonatomic, assign) float gammaUC;
 
-- (id)initWithBudget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(float)aFashion 
+@property (nonatomic, assign) float delta;
+@property (nonatomic, retain) NSArray *alphaLC;
+@property (nonatomic, retain) NSArray *alphaUC;
+
+- (id)initWithBudget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(int)aFashion 
                RhoLC:(float)aRhoLC RhoUC:(float)aRhoUC LambdaLC:(float)aLambdaLC LambdaUC:(float)aLambdaUC 
-               PhiLC:(float)aPhiLC PhiUC:(float)aPhiUC TauLC:(float)aTauLC TauUC:(float)aTauUC GammaLC:(float)aGammaLC GammaUC:(float)aGammaUC;
+               PhiLC:(float)aPhiLC PhiUC:(float)aPhiUC TauLC:(float)aTauLC TauUC:(float)aTauUC GammaLC:(float)aGammaLC GammaUC:(float)aGammaUC
+               Delta:(float)aDelta AlphaLC:(NSArray *)aAlphaLC AlphaUC:(NSArray *)aAlphaUC;
 
 @end

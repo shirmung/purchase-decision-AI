@@ -12,12 +12,19 @@
 @interface PurchaseDecision : NSObject
 {
     float threshold;
+    
+    // for use in part C
+    NSArray *advertising;
+    float mPrevious;
 }
 
 @property (nonatomic, assign) float threshold;
 
-- (float)partA:(Agent *)agent :(Jeans *)jeans;
-- (int)partB:(Agent *)agent;
-- (float)partC;
+@property (nonatomic, retain) NSArray *advertising;
+@property (nonatomic, assign) float mPrevious;
+
+- (float)partA:(Agent *)agent :(Jeans *)jeans :(int)time;
+- (int)partB:(Agent *)agent :(int)time;
+- (int)partC:(Agent *)agent :(int)time;
 
 @end

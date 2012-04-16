@@ -28,7 +28,7 @@
     self = [super init];
     
     if (self) {
-        self.price = aPrice;
+        price = aPrice;
     }
     
     return self;
