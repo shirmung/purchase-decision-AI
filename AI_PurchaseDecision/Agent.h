@@ -8,6 +8,7 @@
 
 @interface Agent : NSObject
 {
+    int number;
     float budget;
     float fit;
     float trust;
@@ -33,6 +34,7 @@
     NSArray *alphaUC;
 }
 
+@property (nonatomic, assign) int number;
 @property (nonatomic, assign) float budget;
 @property (nonatomic, assign) float fit;
 @property (nonatomic, assign) float trust;
@@ -54,7 +56,7 @@
 @property (nonatomic, retain) NSArray *alphaLC;
 @property (nonatomic, retain) NSArray *alphaUC;
 
-- (id)initWithBudget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(int)aFashion 
+- (id)initWithNumber:(int)aNumber Budget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(int)aFashion 
                RhoLC:(float)aRhoLC RhoUC:(float)aRhoUC LambdaLC:(float)aLambdaLC LambdaUC:(float)aLambdaUC 
                PhiLC:(float)aPhiLC PhiUC:(float)aPhiUC TauLC:(float)aTauLC TauUC:(float)aTauUC GammaLC:(float)aGammaLC GammaUC:(float)aGammaUC
                Delta:(float)aDelta AlphaLC:(NSArray *)aAlphaLC AlphaUC:(NSArray *)aAlphaUC;

@@ -35,7 +35,7 @@
         NSArray *alphaLC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:0.5], [NSNumber numberWithFloat:0.5], [NSNumber numberWithFloat:0.1], nil];
         NSArray *alphaUC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:1.3], [NSNumber numberWithFloat:1.1], [NSNumber numberWithFloat:1.1], nil];
         
-        Agent *agent1 = [[Agent alloc] initWithBudget:30.0 Fit:0.6 Trust:0.6 Fashion:1 
+        Agent *agent1 = [[Agent alloc] initWithNumber:1 Budget:30.0 Fit:0.6 Trust:0.6 Fashion:1 
                                                 RhoLC:0.2 RhoUC:1.1 LambdaLC:1.5 LambdaUC:2.0
                                                 PhiLC:1.0 PhiUC:1.2 TauLC:1.0 TauUC:1.5 GammaLC:1.5 GammaUC:1.1
                                                 Delta:1.2 AlphaLC:alphaLC1 AlphaUC:alphaUC1];
@@ -121,8 +121,7 @@
             float mAdvertising = ([[advertising objectAtIndex:(time - 1)] floatValue] * pow(fabsf(sFashion - MIN((pFashion + 1), 4)), agent.delta));
             
             // represents how much agent values own opinion
-            // index should actually come from agent's number
-            float mSelf = ([[agent.alphaLC objectAtIndex:0] floatValue] *pow(fabsf(sFashion - pFashion), [[agent.alphaUC objectAtIndex:0] floatValue]));
+            float mSelf = ([[agent.alphaLC objectAtIndex:(agent.number - 1)] floatValue] *pow(fabsf(sFashion - pFashion), [[agent.alphaUC objectAtIndex:0] floatValue]));
             
             if (time == 1) {
                 if (sFashion == agent.fashion) mPrevious = 1;
