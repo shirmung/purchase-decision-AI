@@ -28,10 +28,13 @@
     float gammaLC;
     float gammaUC;
     
-    // combination weight for choosing a fashion value in part C
+    // combination weights for choosing a fashion value in part C
     float delta;
     NSArray *alphaLC;
     NSArray *alphaUC;
+    
+    // previous sFashion probability in part C
+    NSMutableArray *p;
 }
 
 @property (nonatomic, assign) int number;
@@ -55,6 +58,7 @@
 @property (nonatomic, assign) float delta;
 @property (nonatomic, retain) NSArray *alphaLC;
 @property (nonatomic, retain) NSArray *alphaUC;
+@property (nonatomic, retain) NSMutableArray *p;
 
 - (id)initWithNumber:(int)aNumber Budget:(float)aBudget Fit:(float)aFit Trust:(float)aTrust Fashion:(int)aFashion 
                RhoLC:(float)aRhoLC RhoUC:(float)aRhoUC LambdaLC:(float)aLambdaLC LambdaUC:(float)aLambdaUC 

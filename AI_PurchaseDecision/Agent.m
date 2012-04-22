@@ -13,7 +13,7 @@
 @synthesize number, budget, fit, trust, fashion;
 @synthesize rhoLC, rhoUC, lambdaLC, lambdaUC;
 @synthesize phiLC, phiUC, tauLC, tauUC, gammaLC, gammaUC;
-@synthesize delta, alphaLC, alphaUC;
+@synthesize delta, alphaLC, alphaUC, p;
 
 - (id)init
 {
@@ -55,6 +55,10 @@
         delta = aDelta;
         alphaLC = [[NSArray alloc] initWithArray:aAlphaLC];
         alphaUC = [[NSArray alloc] initWithArray:aAlphaUC];
+        
+        p = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.0], 
+                                                    [NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.0], nil];
+        [p replaceObjectAtIndex:fashion withObject:[NSNumber numberWithFloat:1.0]];
     }
     
     return self;
@@ -64,6 +68,7 @@
 {
     [alphaLC release];
     [alphaUC release];
+    [p release];
     
     [super dealloc];
 }
