@@ -20,8 +20,8 @@
 
 @property (nonatomic, retain) NSArray *advertising;
 
-- (float)partA:(Agent *)agent1 :(Jeans *)jeans :(int)time;
-- (int)partB:(Agent *)agent1 :(int)time;
-- (int)partC:(Agent *)agent1 :(int)time;
+- (float)partA:(Agent *)agent :(Jeans *)jeans :(int)time;
+- (int)partB:(Agent *)agent :(int)time;
+- (int)partC:(Agent *)agent :(int)time;
 
 @end

@@ -31,8 +31,8 @@
         
         Jeans *jeans1 = [[Jeans alloc] initWithPrice:10.0];
     
-        NSArray *alphaLC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:10.0], [NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.0], nil];
-        NSArray *alphaUC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:10.0], [NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.0], nil];
+        NSArray *alphaLC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:1.0], [NSNumber numberWithFloat:0.0], nil];
+        NSArray *alphaUC1 = [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:1.0], [NSNumber numberWithFloat:0.0],  nil];
         
         Agent *agent1 = [[Agent alloc] initWithNumber:1 Budget:30.0 Fit:0.6 Trust:0.6 Fashion:1
                                                 RhoLC:0.2 RhoUC:1.1 LambdaLC:1.5 LambdaUC:2.0
@@ -72,7 +72,7 @@
     // represents an agent's ability to purchase a pair of jeans
     float mPrice = agent.rhoLC * pow((jeans.price / (agent.budget - jeans.price)), agent.rhoUC);
         
-    float m = (mPrice + mLike - 2);
+    float m = (mPrice + mLike - 2.0);
     
     // purchase probability
     float purchase = 1.0/(1.0 + pow(M_E, m));
@@ -94,7 +94,7 @@
         
         // represents how much an agent trusts the brand of a pair of jeans
         float mTrust = agent.tauLC * pow(fabsf((0.25 * sLike) - agent.trust), agent.tauUC);
-        
+
         // represents an agent's sense of fashion
         float mFashion = agent.gammaLC * pow(0.25, agent.gammaUC) * pow(fabsf(sLike - fashion), agent.gammaUC); 
        
