@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C110257615DEFCD400F5F653 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C110256E15DEFCD400F5F653 /* Agent.m */; };
+		C110257715DEFCD400F5F653 /* Jeans.m in Sources */ = {isa = PBXBuildFile; fileRef = C110257115DEFCD400F5F653 /* Jeans.m */; };
+		C110257815DEFCD400F5F653 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C110257215DEFCD400F5F653 /* main.m */; };
+		C110257915DEFCD400F5F653 /* PurchaseDecision.m in Sources */ = {isa = PBXBuildFile; fileRef = C110257515DEFCD400F5F653 /* PurchaseDecision.m */; };
 		C165055E152CC2C600D9D723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165055D152CC2C600D9D723 /* Foundation.framework */; };
-		C1650561152CC2C600D9D723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1650560152CC2C600D9D723 /* main.m */; };
-		C1650565152CC2C600D9D723 /* AI_PurchaseDecision.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */; };
-		C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */ = {isa = PBXBuildFile; fileRef = C165056C152CC30500D9D723 /* PurchaseDecision.m */; };
-		C1FF5B46153604E000EC9005 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF5B45153604E000EC9005 /* Agent.m */; };
-		C1FF5B4A1536055100EC9005 /* Jeans.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF5B491536055100EC9005 /* Jeans.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,24 +21,23 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				C1650565152CC2C600D9D723 /* AI_PurchaseDecision.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C1650559152CC2C600D9D723 /* AI_PurchaseDecision */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AI_PurchaseDecision; sourceTree = BUILT_PRODUCTS_DIR; };
+		C110256D15DEFCD400F5F653 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		C110256E15DEFCD400F5F653 /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		C110256F15DEFCD400F5F653 /* PurchaseDecision.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = PurchaseDecision.1; sourceTree = "<group>"; };
+		C110257015DEFCD400F5F653 /* Jeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jeans.h; sourceTree = "<group>"; };
+		C110257115DEFCD400F5F653 /* Jeans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jeans.m; sourceTree = "<group>"; };
+		C110257215DEFCD400F5F653 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C110257315DEFCD400F5F653 /* PurchaseDecision-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PurchaseDecision-Prefix.pch"; sourceTree = "<group>"; };
+		C110257415DEFCD400F5F653 /* PurchaseDecision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseDecision.h; sourceTree = "<group>"; };
+		C110257515DEFCD400F5F653 /* PurchaseDecision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseDecision.m; sourceTree = "<group>"; };
+		C1650559152CC2C600D9D723 /* PurchaseDecision */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PurchaseDecision; sourceTree = BUILT_PRODUCTS_DIR; };
 		C165055D152CC2C600D9D723 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C1650560152CC2C600D9D723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C1650563152CC2C600D9D723 /* AI_PurchaseDecision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AI_PurchaseDecision-Prefix.pch"; sourceTree = "<group>"; };
-		C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AI_PurchaseDecision.1; sourceTree = "<group>"; };
-		C165056B152CC30500D9D723 /* PurchaseDecision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseDecision.h; sourceTree = "<group>"; };
-		C165056C152CC30500D9D723 /* PurchaseDecision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseDecision.m; sourceTree = "<group>"; };
-		C1FF5B44153604E000EC9005 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
-		C1FF5B45153604E000EC9005 /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
-		C1FF5B481536055100EC9005 /* Jeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jeans.h; sourceTree = "<group>"; };
-		C1FF5B491536055100EC9005 /* Jeans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jeans.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +52,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C110256C15DEFCD400F5F653 /* PurchaseDecision */ = {
+			isa = PBXGroup;
+			children = (
+				C110257215DEFCD400F5F653 /* main.m */,
+				C110257415DEFCD400F5F653 /* PurchaseDecision.h */,
+				C110257515DEFCD400F5F653 /* PurchaseDecision.m */,
+				C110256D15DEFCD400F5F653 /* Agent.h */,
+				C110256E15DEFCD400F5F653 /* Agent.m */,
+				C110257015DEFCD400F5F653 /* Jeans.h */,
+				C110257115DEFCD400F5F653 /* Jeans.m */,
+				C110256F15DEFCD400F5F653 /* PurchaseDecision.1 */,
+				C110257A15DEFCE300F5F653 /* Supporting Files */,
+			);
+			path = PurchaseDecision;
+			sourceTree = "<group>";
+		};
+		C110257A15DEFCE300F5F653 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C110257315DEFCD400F5F653 /* PurchaseDecision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C165054E152CC2C600D9D723 = {
 			isa = PBXGroup;
 			children = (
-				C165055F152CC2C600D9D723 /* AI_PurchaseDecision */,
+				C110256C15DEFCD400F5F653 /* PurchaseDecision */,
 				C165055C152CC2C600D9D723 /* Frameworks */,
 				C165055A152CC2C600D9D723 /* Products */,
 			);
@@ -66,7 +88,7 @@
 		C165055A152CC2C600D9D723 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1650559152CC2C600D9D723 /* AI_PurchaseDecision */,
+				C1650559152CC2C600D9D723 /* PurchaseDecision */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,36 +101,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C165055F152CC2C600D9D723 /* AI_PurchaseDecision */ = {
-			isa = PBXGroup;
-			children = (
-				C1650560152CC2C600D9D723 /* main.m */,
-				C165056B152CC30500D9D723 /* PurchaseDecision.h */,
-				C165056C152CC30500D9D723 /* PurchaseDecision.m */,
-				C1FF5B44153604E000EC9005 /* Agent.h */,
-				C1FF5B45153604E000EC9005 /* Agent.m */,
-				C1FF5B481536055100EC9005 /* Jeans.h */,
-				C1FF5B491536055100EC9005 /* Jeans.m */,
-				C1650564152CC2C600D9D723 /* AI_PurchaseDecision.1 */,
-				C1650562152CC2C600D9D723 /* Supporting Files */,
-			);
-			path = AI_PurchaseDecision;
-			sourceTree = "<group>";
-		};
-		C1650562152CC2C600D9D723 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C1650563152CC2C600D9D723 /* AI_PurchaseDecision-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1650558152CC2C600D9D723 /* AI_PurchaseDecision */ = {
+		C1650558152CC2C600D9D723 /* PurchaseDecision */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "AI_PurchaseDecision" */;
+			buildConfigurationList = C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "PurchaseDecision" */;
 			buildPhases = (
 				C1650555152CC2C600D9D723 /* Sources */,
 				C1650556152CC2C600D9D723 /* Frameworks */,
@@ -118,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = AI_PurchaseDecision;
+			name = PurchaseDecision;
 			productName = AI_PurchaseDecision;
-			productReference = C1650559152CC2C600D9D723 /* AI_PurchaseDecision */;
+			productReference = C1650559152CC2C600D9D723 /* PurchaseDecision */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +129,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "AI_PurchaseDecision" */;
+			buildConfigurationList = C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "PurchaseDecision" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1650558152CC2C600D9D723 /* AI_PurchaseDecision */,
+				C1650558152CC2C600D9D723 /* PurchaseDecision */,
 			);
 		};
 /* End PBXProject section */
@@ -153,10 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1650561152CC2C600D9D723 /* main.m in Sources */,
-				C165056D152CC30500D9D723 /* PurchaseDecision.m in Sources */,
-				C1FF5B46153604E000EC9005 /* Agent.m in Sources */,
-				C1FF5B4A1536055100EC9005 /* Jeans.m in Sources */,
+				C110257615DEFCD400F5F653 /* Agent.m in Sources */,
+				C110257715DEFCD400F5F653 /* Jeans.m in Sources */,
+				C110257815DEFCD400F5F653 /* main.m in Sources */,
+				C110257915DEFCD400F5F653 /* PurchaseDecision.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +210,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AI_PurchaseDecision/AI_PurchaseDecision-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PurchaseDecision/PurchaseDecision-Prefix.pch";
+				PRODUCT_NAME = PurchaseDecision;
 			};
 			name = Debug;
 		};
@@ -221,15 +219,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AI_PurchaseDecision/AI_PurchaseDecision-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PurchaseDecision/PurchaseDecision-Prefix.pch";
+				PRODUCT_NAME = PurchaseDecision;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "AI_PurchaseDecision" */ = {
+		C1650553152CC2C600D9D723 /* Build configuration list for PBXProject "PurchaseDecision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1650566152CC2C600D9D723 /* Debug */,
@@ -238,7 +236,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "AI_PurchaseDecision" */ = {
+		C1650568152CC2C600D9D723 /* Build configuration list for PBXNativeTarget "PurchaseDecision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1650569152CC2C600D9D723 /* Debug */,
